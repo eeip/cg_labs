@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{E3DBCEE4-87DF-304E-AFAA-92AC01D949EE}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lan13ep1\Program\CG_Labs\code\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/lan13ep1/Program/CG_Labs/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/lan13ep1/Program/CG_Labs/code -BC:/Users/lan13ep1/Program/CG_Labs/build --check-stamp-file C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/lan13ep1/Program/CG_Labs/code/CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\code\CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallAssimp.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config-version.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config-version.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallGLFW.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3ConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Targets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Targets-release.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3ConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Targets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallGLM.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfig.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmTargets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfig.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmTargets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallImGui.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiConfig.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiTargets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiTargets-release.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallTinyFileDialogs.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\RetrieveResourceArchive.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\src\core\config.hpp.in;C:\Users\lan13ep1\Program\CG_Labs\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/lan13ep1/Program/CG_Labs/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/lan13ep1/Program/CG_Labs/code -BC:/Users/lan13ep1/Program/CG_Labs/build --check-stamp-file C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/lan13ep1/Program/CG_Labs/code/CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\code\CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallAssimp.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config-version.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config-version.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallGLFW.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3ConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Targets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Targets-release.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3ConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Targets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallGLM.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfig.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmTargets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfig.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmTargets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallImGui.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiConfig.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiTargets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiTargets-release.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallTinyFileDialogs.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\RetrieveResourceArchive.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\src\core\config.hpp.in;C:\Users\lan13ep1\Program\CG_Labs\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/lan13ep1/Program/CG_Labs/code/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/lan13ep1/Program/CG_Labs/code -BC:/Users/lan13ep1/Program/CG_Labs/build --check-stamp-file C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/lan13ep1/Program/CG_Labs/code/CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\code\CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInitialize.cmake;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeCXXCompiler.cmake;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\WindowsPaths.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\3.6.1\CMakeRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindGit.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.6\Modules\CMakeParseArguments.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallAssimp.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config-version.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config-version.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\lib\cmake\assimp-4.1\assimp-config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallGLFW.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3ConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Targets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Targets-release.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3ConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Config.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\cmake\glfw3\glfw3Targets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallGLM.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfig.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmTargets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmConfig.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\lib\cmake\glm\glmTargets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallImGui.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiConfigVersion.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiConfig.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiTargets.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\cmake\imgui\imguiTargets-release.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\InstallTinyFileDialogs.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\CMake\RetrieveResourceArchive.cmake;C:\Users\lan13ep1\Program\CG_Labs\code\src\core\config.hpp.in;C:\Users\lan13ep1\Program\CG_Labs\code\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\lan13ep1\Program\CG_Labs\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/ZERO_CHECK.vcxproj">
+      <Project>1A77F32C-BAD6-3903-9CEA-45F1C83C3A27</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/EDAF80_Assignment1.vcxproj">
+      <Project>5C9E0749-D952-3736-81E3-6896013C6856</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/EDAF80_Assignment2.vcxproj">
+      <Project>6D542C79-7342-3E0B-A050-49C0ED3E83C4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/EDAF80_Assignment3.vcxproj">
+      <Project>766D2988-3DF0-3229-A736-A4DE6F5C625C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/EDAF80_Assignment4.vcxproj">
+      <Project>55E43B00-A328-328A-9F45-C4F6B11A756F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/EDAF80_Assignment5.vcxproj">
+      <Project>B45B32F3-8374-32F1-AFF1-3F38396F96F3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAN35/EDAN35_Assignment2.vcxproj">
+      <Project>45B92BBF-3899-3AD5-8971-9403B1C33F70</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/src/core/bonobo.vcxproj">
+      <Project>A0DF1080-6B0C-380A-A063-EE348E1FE9C8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/src/external/external_libs.vcxproj">
+      <Project>78088273-BFA0-3408-811C-B74123702AB9</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,22 @@
+﻿Build started 2018-09-19 14:17:10.
+     1>Project "C:\Users\lan13ep1\Program\CG_Labs\build\src\external\external_libs.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/lan13ep1/Program/CG_Labs/code/src/external/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\lan13ep1\Program\CG_Labs\build\src\external\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\lan13ep1\Program\CG_Labs\code\src\external /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include" /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include" /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"external_libs.dir\Debug\\" /Fd"external_libs.dir\Debug\external_libs.pdb" /Gd /TC /errorReport:prompt C:\Users\lan13ep1\Program\CG_Labs\code\src\external\glad.c
+         glad.c
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\lan13ep1\Program\CG_Labs\code\src\external /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include" /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include" /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"external_libs.dir\Debug\\" /Fd"external_libs.dir\Debug\external_libs.pdb" /Gd /TP /errorReport:prompt C:\Users\lan13ep1\Program\CG_Labs\code\src\external\imgui_impl_glfw_gl3.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\external\lodepng.cpp
+         imgui_impl_glfw_gl3.cpp
+         lodepng.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\lan13ep1\Program\CG_Labs\build\src\external\Debug\external_libs.lib" /NOLOGO /MACHINE:X64  /machine:x64 external_libs.dir\Debug\glad.obj
+         external_libs.dir\Debug\imgui_impl_glfw_gl3.obj
+         external_libs.dir\Debug\lodepng.obj
+         external_libs.vcxproj -> C:\Users\lan13ep1\Program\CG_Labs\build\src\external\Debug\external_libs.lib
+     1>Done Building Project "C:\Users\lan13ep1\Program\CG_Labs\build\src\external\external_libs.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.55

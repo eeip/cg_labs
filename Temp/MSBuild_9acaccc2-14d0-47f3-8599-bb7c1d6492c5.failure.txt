@@ -1,0 +1,13 @@
+UNHANDLED EXCEPTIONS FROM PROCESS 4764:
+=====================
+2018-09-19 14:59:51
+System.Threading.Tasks.TaskCanceledException: A task was canceled.
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Windows.Threading.DispatcherOperation.Wait(TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.InvokeImpl(DispatcherOperation operation, CancellationToken cancellationToken, TimeSpan timeout)
+   at System.Windows.Threading.Dispatcher.Invoke(Action callback, DispatcherPriority priority, CancellationToken cancellationToken, TimeSpan timeout)
+   at MS.Internal.WeakEventTable.OnShutDown()
+   at MS.Internal.WeakEventTable.WeakEventTableShutDownListener.OnShutDown(Object target, Object sender, EventArgs e)
+   at MS.Internal.ShutDownListener.HandleShutDown(Object sender, EventArgs e)
+===================

@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A0DF1080-6B0C-380A-A063-EE348E1FE9C8}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bonobo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\lan13ep1\Program\CG_Labs\build\src\core\Debug\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bonobo.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bonobo</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\lan13ep1\Program\CG_Labs\build\src\core\Release\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bonobo.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bonobo</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\lan13ep1\Program\CG_Labs\build\src\core\RelWithDebInfo\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bonobo.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bonobo</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\lan13ep1\Program\CG_Labs\code\src;C:\Users\lan13ep1\Program\CG_Labs\build;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\src\external;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\lan13ep1\Program\CG_Labs\code\src;C:\Users\lan13ep1\Program\CG_Labs\build;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\src\external;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lan13ep1\Program\CG_Labs\code\src;C:\Users\lan13ep1\Program\CG_Labs\build;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\src\external;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\lan13ep1\Program\CG_Labs\code\src;C:\Users\lan13ep1\Program\CG_Labs\build;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\src\external;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\lan13ep1\Program\CG_Labs\code\src;C:\Users\lan13ep1\Program\CG_Labs\build;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\src\external;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lan13ep1\Program\CG_Labs\code\src;C:\Users\lan13ep1\Program\CG_Labs\build;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\src\external;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\lan13ep1\Program\CG_Labs\code\src;C:\Users\lan13ep1\Program\CG_Labs\build;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\src\external;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\lan13ep1\Program\CG_Labs\code\src;C:\Users\lan13ep1\Program\CG_Labs\build;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\src\external;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\lan13ep1\Program\CG_Labs\code\src;C:\Users\lan13ep1\Program\CG_Labs\build;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\src\external;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include;C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/lan13ep1/Program/CG_Labs/code/src/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/lan13ep1/Program/CG_Labs/code -BC:/Users/lan13ep1/Program/CG_Labs/build --check-stamp-file C:\Users\lan13ep1\Program\CG_Labs\build\src\core\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/Users/lan13ep1/Program/CG_Labs/code/src/core/CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\code\src\core\CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\code\src\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\lan13ep1\Program\CG_Labs\build\src\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/lan13ep1/Program/CG_Labs/code/src/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/lan13ep1/Program/CG_Labs/code -BC:/Users/lan13ep1/Program/CG_Labs/build --check-stamp-file C:\Users\lan13ep1\Program\CG_Labs\build\src\core\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/Users/lan13ep1/Program/CG_Labs/code/src/core/CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\code\src\core\CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\code\src\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\lan13ep1\Program\CG_Labs\build\src\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/lan13ep1/Program/CG_Labs/code/src/core/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -HC:/Users/lan13ep1/Program/CG_Labs/code -BC:/Users/lan13ep1/Program/CG_Labs/build --check-stamp-file C:\Users\lan13ep1\Program\CG_Labs\build\src\core\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/Users/lan13ep1/Program/CG_Labs/code/src/core/CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\code\src\core\CMakeLists.txt;C:\Users\lan13ep1\Program\CG_Labs\code\src\core\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\lan13ep1\Program\CG_Labs\build\src\core\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\node.hpp" />
+    <ClInclude Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\helpers.hpp" />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\Bonobo.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\GLStateInspection.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\GLStateInspectionView.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\InputHandler.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\Log.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\LogView.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\Misc.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\opengl.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\ShaderProgramManager.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\Types.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\various.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\WindowManager.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\node.cpp"  />
+    <ClCompile Include="C:\Users\lan13ep1\Program\CG_Labs\code\src\core\helpers.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/ZERO_CHECK.vcxproj">
+      <Project>1A77F32C-BAD6-3903-9CEA-45F1C83C3A27</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Users/lan13ep1/Program/CG_Labs/build/src/external/external_libs.vcxproj">
+      <Project>78088273-BFA0-3408-811C-B74123702AB9</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,14 @@
+﻿Build started 2018-09-19 14:17:09.
+     1>Project "C:\Users\lan13ep1\Program\CG_Labs\build\ZERO_CHECK.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Checking Build System
+         CMake does not need to re-run because C:/Users/lan13ep1/Program/CG_Labs/build/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/lan13ep1/Program/CG_Labs/build/src/external/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/lan13ep1/Program/CG_Labs/build/src/core/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/CMakeFiles/generate.stamp is up-to-date.
+         CMake does not need to re-run because C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAN35/CMakeFiles/generate.stamp is up-to-date.
+     1>Done Building Project "C:\Users\lan13ep1\Program\CG_Labs\build\ZERO_CHECK.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.92

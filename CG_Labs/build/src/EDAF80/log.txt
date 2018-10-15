@@ -1,0 +1,13 @@
+
+ === Log (Sep 19 2018, 14:17:15) === 
+
+Running Bonobo v0.2
+Initiating window management system...
+Done
+Using OpenGL 4.1 with context options: profile=core, debug=false, forward compatible=false.
+[C:\Users\lan13ep1\Program\CG_Labs\code\src\core\opengl.cpp, utils::opengl::shader::source_and_build_shader (149)]
+Error: Shader compiling error:
+0(10) : error C0000: syntax error, unexpected '(', expecting "::" at token "("
+0(25) : error C7566: out blocks require #version 150 or later
+0(25) : error C0000: ... or #extension GL_ARB_gpu_shader5 : enable
+

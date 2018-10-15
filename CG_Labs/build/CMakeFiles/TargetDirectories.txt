@@ -1,0 +1,16 @@
+C:/Users/lan13ep1/Program/CG_Labs/build/CMakeFiles/INSTALL.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/external/CMakeFiles/external_libs.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/external/CMakeFiles/INSTALL.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/core/CMakeFiles/bonobo.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/core/CMakeFiles/INSTALL.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/core/CMakeFiles/ALL_BUILD.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/CMakeFiles/EDAF80_Assignment1.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/CMakeFiles/INSTALL.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/CMakeFiles/EDAF80_Assignment2.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/CMakeFiles/EDAF80_Assignment3.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/CMakeFiles/EDAF80_Assignment4.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/CMakeFiles/EDAF80_Assignment5.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAN35/CMakeFiles/EDAN35_Assignment2.dir
+C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAN35/CMakeFiles/INSTALL.dir

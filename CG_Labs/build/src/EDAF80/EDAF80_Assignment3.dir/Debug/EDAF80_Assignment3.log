@@ -1,0 +1,18 @@
+﻿Build started 2018-10-15 14:19:42.
+     1>Project "C:\Users\lan13ep1\Program\CG_Labs\build\src\EDAF80\EDAF80_Assignment3.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\lan13ep1\Program\CG_Labs\code\src /IC:\Users\lan13ep1\Program\CG_Labs\build /IC:\Users\lan13ep1\Program\CG_Labs\code\src\external /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include" /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include" /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include" /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\tinyfiledialogs-source" /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"EDAF80_Assignment3.dir\Debug\\" /Fd"EDAF80_Assignment3.dir\Debug\vc140.pdb" /Gd /TP /errorReport:prompt C:\Users\lan13ep1\Program\CG_Labs\code\src\EDAF80\assignment3.cpp
+         assignment3.cpp
+     1>C:\Users\lan13ep1\Program\CG_Labs\code\src\EDAF80\assignment3.cpp(70): warning C4305: '=': truncation from 'double' to 'float'
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\lan13ep1\Program\CG_Labs\build\src\EDAF80\Debug\EDAF80_Assignment3.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/assimp-install/lib" /LIBPATH:"C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/assimp-install/lib/Debug" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib ..\core\Debug\bonobo.lib "C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\imgui.lib" ..\external\Debug\external_libs.lib "C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\lib\imgui.lib" "C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\lib\glfw3.lib" "assimp-vc140-mt.lib" /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/Debug/EDAF80_Assignment3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/lan13ep1/Program/CG_Labs/build/src/EDAF80/Debug/EDAF80_Assignment3.lib" /MACHINE:X64  /machine:x64 EDAF80_Assignment3.dir\Debug\assignment3.obj
+         EDAF80_Assignment3.dir\Debug\interpolation.obj
+         EDAF80_Assignment3.dir\Debug\parametric_shapes.obj
+         EDAF80_Assignment3.dir\Debug\tinyfiledialogs.obj
+     1>LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+         EDAF80_Assignment3.vcxproj -> C:\Users\lan13ep1\Program\CG_Labs\build\src\EDAF80\Debug\EDAF80_Assignment3.exe
+     1>Done Building Project "C:\Users\lan13ep1\Program\CG_Labs\build\src\EDAF80\EDAF80_Assignment3.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.48

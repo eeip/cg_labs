@@ -1,0 +1,31 @@
+[2018-09-19 15:00:01:0110] Adobe ARM 1.824.29.8644 logging started.
+[2018-09-19 15:00:01:0217] Too soon to check for arm update
+[2018-09-19 15:00:01:0247] ProductCode: {AC76BA86-7AD7-FFFF-7B44-AE1108756300}
+[2018-09-19 15:00:01:0247] ProductName: Adobe Acrobat Reader 2017 MUI
+[2018-09-19 15:00:01:0247] ProductVersion: 17.011.30099
+[2018-09-19 15:00:01:0247] ProductUACPatching: enabled
+[2018-09-19 15:00:01:0296] Using registered preference AUTO_ALL
+[2018-09-19 15:00:01:0297] Last check for updates not expired
+[2018-09-19 15:00:01:0297]    Error Code: 120300
+[2018-09-19 15:00:01:0308] Using registered preference AUTO_ALL
+[2018-09-19 15:00:01:0309] Last check for updates not expired
+[2018-09-19 15:00:01:0309]    Error Code: 120300
+[2018-09-19 15:00:01:0523] ARM returns ERROR_SUCCESS
+[2018-09-19 15:00:01:0523] Adobe ARM 1.824.29.8644 logging finished.
+
+
+
+[2018-10-15 13:49:01:0282] Adobe ARM 1.824.29.8644 logging started.
+[2018-10-15 13:49:01:0376] Too soon to check for arm update
+[2018-10-15 13:49:01:0439] ProductCode: {AC76BA86-7AD7-FFFF-7B44-AE1108756300}
+[2018-10-15 13:49:01:0439] ProductName: Adobe Acrobat Reader 2017 MUI
+[2018-10-15 13:49:01:0439] ProductVersion: 17.011.30105
+[2018-10-15 13:49:01:0439] ProductUACPatching: enabled
+[2018-10-15 13:49:01:0595] Using registered preference AUTO_ALL
+[2018-10-15 13:49:01:0595] Last check for updates not expired
+[2018-10-15 13:49:01:0595]    Error Code: 120300
+[2018-10-15 13:49:01:0595] Using registered preference AUTO_ALL
+[2018-10-15 13:49:01:0595] Last check for updates not expired
+[2018-10-15 13:49:01:0595]    Error Code: 120300
+[2018-10-15 13:49:01:0814] ARM returns ERROR_SUCCESS
+[2018-10-15 13:49:01:0814] Adobe ARM 1.824.29.8644 logging finished.

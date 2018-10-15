@@ -1,0 +1,49 @@
+﻿Build started 2018-09-19 14:17:13.
+     1>Project "C:\Users\lan13ep1\Program\CG_Labs\build\src\core\bonobo.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Building Custom Rule C:/Users/lan13ep1/Program/CG_Labs/code/src/core/CMakeLists.txt
+         CMake does not need to re-run because C:\Users\lan13ep1\Program\CG_Labs\build\src\core\CMakeFiles\generate.stamp is up-to-date.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /IC:\Users\lan13ep1\Program\CG_Labs\code\src /IC:\Users\lan13ep1\Program\CG_Labs\build /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\assimp-install\include" /IC:\Users\lan13ep1\Program\CG_Labs\code\src\external /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\imgui-install\include" /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glfw-install\include" /I"C:\Users\lan13ep1\Program\CG_Labs\code\dependencies\glm-install\include" /Zi /nologo /W3 /WX- /Od /Ob0 /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"bonobo.dir\Debug\\" /Fd"bonobo.dir\Debug\bonobo.pdb" /Gd /TP /errorReport:prompt C:\Users\lan13ep1\Program\CG_Labs\code\src\core\Bonobo.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\GLStateInspection.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\GLStateInspectionView.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\InputHandler.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\Log.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\LogView.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\Misc.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\opengl.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\ShaderProgramManager.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\Types.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\various.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\WindowManager.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\node.cpp C:\Users\lan13ep1\Program\CG_Labs\code\src\core\helpers.cpp
+         Bonobo.cpp
+         GLStateInspection.cpp
+         GLStateInspectionView.cpp
+     1>C:\Users\lan13ep1\Program\CG_Labs\code\src\core\GLStateInspectionView.cpp(36): warning C4996: 'strncpy': This function or variable may be unsafe. Consider using strncpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\string.h(346): note: see declaration of 'strncpy'
+         InputHandler.cpp
+         Log.cpp
+     1>C:\Users\lan13ep1\Program\CG_Labs\code\src\core\Log.cpp(82): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+     1>C:\Users\lan13ep1\Program\CG_Labs\code\src\core\Log.cpp(131): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+         C:\Program Files (x86)\Windows Kits\10\Include\10.0.10150.0\ucrt\string.h(90): note: see declaration of 'strcat'
+         LogView.cpp
+         Misc.cpp
+         opengl.cpp
+         ShaderProgramManager.cpp
+         Types.cpp
+         various.cpp
+         WindowManager.cpp
+         node.cpp
+         helpers.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Users\lan13ep1\Program\CG_Labs\build\src\core\Debug\bonobo.lib" /NOLOGO /MACHINE:X64  /machine:x64 bonobo.dir\Debug\Bonobo.obj
+         bonobo.dir\Debug\GLStateInspection.obj
+         bonobo.dir\Debug\GLStateInspectionView.obj
+         bonobo.dir\Debug\InputHandler.obj
+         bonobo.dir\Debug\Log.obj
+         bonobo.dir\Debug\LogView.obj
+         bonobo.dir\Debug\Misc.obj
+         bonobo.dir\Debug\opengl.obj
+         bonobo.dir\Debug\ShaderProgramManager.obj
+         bonobo.dir\Debug\Types.obj
+         bonobo.dir\Debug\various.obj
+         bonobo.dir\Debug\WindowManager.obj
+         bonobo.dir\Debug\node.obj
+         bonobo.dir\Debug\helpers.obj
+         bonobo.vcxproj -> C:\Users\lan13ep1\Program\CG_Labs\build\src\core\Debug\bonobo.lib
+     1>Done Building Project "C:\Users\lan13ep1\Program\CG_Labs\build\src\core\bonobo.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:11.14

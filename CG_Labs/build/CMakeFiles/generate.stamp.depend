@@ -1,0 +1,55 @@
+# CMake generation dependency list for this directory.
+C:/Users/lan13ep1/Program/CG_Labs/code/CMakeLists.txt
+C:/Users/lan13ep1/Program/CG_Labs/build/CMakeFiles/3.6.1/CMakeSystem.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Users/lan13ep1/Program/CG_Labs/build/CMakeFiles/3.6.1/CMakeCXXCompiler.cmake
+C:/Users/lan13ep1/Program/CG_Labs/build/CMakeFiles/3.6.1/CMakeCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/Platform/WindowsPaths.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/Platform/Windows-MSVC.cmake
+C:/Users/lan13ep1/Program/CG_Labs/build/CMakeFiles/3.6.1/CMakeRCCompiler.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/Platform/Windows-MSVC-C.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindGit.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.6/Modules/CMakeParseArguments.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/CMake/InstallAssimp.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/assimp-install/lib/cmake/assimp-4.1/assimp-config-version.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/assimp-install/lib/cmake/assimp-4.1/assimp-config.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/assimp-install/lib/cmake/assimp-4.1/assimp-config-version.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/assimp-install/lib/cmake/assimp-4.1/assimp-config.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/CMake/InstallGLFW.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glfw-install/lib/cmake/glfw3/glfw3ConfigVersion.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glfw-install/lib/cmake/glfw3/glfw3Config.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glfw-install/lib/cmake/glfw3/glfw3Targets.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glfw-install/lib/cmake/glfw3/glfw3Targets-release.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glfw-install/lib/cmake/glfw3/glfw3ConfigVersion.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glfw-install/lib/cmake/glfw3/glfw3Config.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glfw-install/lib/cmake/glfw3/glfw3Targets.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/CMake/InstallGLM.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glm-install/lib/cmake/glm/glmConfigVersion.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glm-install/lib/cmake/glm/glmConfig.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glm-install/lib/cmake/glm/glmTargets.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glm-install/lib/cmake/glm/glmConfigVersion.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glm-install/lib/cmake/glm/glmConfig.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/glm-install/lib/cmake/glm/glmTargets.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/CMake/InstallImGui.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/imgui-install/lib/cmake/imgui/imguiConfigVersion.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/imgui-install/lib/cmake/imgui/imguiConfig.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/imgui-install/lib/cmake/imgui/imguiTargets.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/dependencies/imgui-install/lib/cmake/imgui/imguiTargets-release.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/CMake/InstallTinyFileDialogs.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/CMake/RetrieveResourceArchive.cmake
+C:/Users/lan13ep1/Program/CG_Labs/code/src/core/config.hpp.in
