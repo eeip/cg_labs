@@ -1,0 +1,320 @@
+#include "config.hpp"
+#include "core/FPSCamera.h"
+#include "core/helpers.hpp"
+#include "core/Log.h"
+#include "core/LogView.h"
+#include "core/Misc.h"
+#include "core/node.hpp"
+#include "core/ShaderProgramManager.hpp"
+#include "core/WindowManager.hpp"
+
+#include <imgui.h>
+#include <external/imgui_impl_glfw_gl3.h>
+
+#include <stack>
+
+#include <cstdlib>
+
+
+int main()
+{
+	//
+	// Set up the logging system
+	//
+	Log::Init();
+	Log::View::Init();
+
+	//
+	// Set up the camera
+	//
+	InputHandler input_handler;
+	FPSCameraf camera(0.5f * glm::half_pi<float>(),
+		static_cast<float>(config::resolution_x) / static_cast<float>(config::resolution_y),
+		0.01f, 1000.0f);
+	camera.mWorld.SetTranslate(glm::vec3(0.0f, 0.0f, 6.0f));
+	camera.mMouseSensitivity = 0.003f;
+	camera.mMovementSpeed = 0.25f * 12.0f;
+
+	//
+	// Set up the windowing system and create the window
+	//
+	WindowManager window_manager;
+	WindowManager::WindowDatum window_datum{ input_handler, camera, config::resolution_x, config::resolution_y, 0, 0, 0, 0 };
+	GLFWwindow* window = window_manager.CreateWindow("EDAF80: Assignment 1", window_datum, config::msaa_rate);
+	if (window == nullptr) {
+		LogError("Failed to get a window: exiting.");
+
+		Log::View::Destroy();
+		Log::Destroy();
+
+		return EXIT_FAILURE;
+	}
+
+	//
+	// Load the sphere geometry
+	//
+	std::vector<bonobo::mesh_data> const objects = bonobo::loadObjects("sphere.obj");
+	if (objects.empty()) {
+		LogError("Failed to load the sphere geometry: exiting.");
+
+		Log::View::Destroy();
+		Log::Destroy();
+
+		return EXIT_FAILURE;
+	}
+	bonobo::mesh_data const& sphere = objects.front();
+
+
+	//
+	// Create the shader program
+	//
+	ShaderProgramManager program_manager;
+	GLuint shader = 0u;
+	program_manager.CreateAndRegisterProgram({ { ShaderType::vertex, "EDAF80/default.vert" },
+	{ ShaderType::fragment, "EDAF80/default.frag" } },
+		shader);
+	if (shader == 0u) {
+		LogError("Failed to generate the shader program: exiting.");
+
+		Log::View::Destroy();
+		Log::Destroy();
+
+		return EXIT_FAILURE;
+	}
+
+
+	//
+	// Set up the sun node and other related attributes
+	//
+	Node sun_node;
+	sun_node.set_geometry(sphere);
+	GLuint const sun_texture = bonobo::loadTexture2D("sunmap.png");
+	sun_node.add_texture("diffuse_texture", sun_texture, GL_TEXTURE_2D);
+	sun_node.set_translation(glm::vec3(0, 0, 0));
+	sun_node.set_scaling(glm::vec3(1, 1, 1));
+	float const sun_spin_speed = glm::two_pi<float>() / 20.0f; // Full rotation in six seconds
+
+
+	//Earth
+	Node earth_node;
+	earth_node.set_geometry(sphere);
+	GLuint const earth_texture = bonobo::loadTexture2D("earth_diffuse.png");
+	earth_node.add_texture("diffuse_texture", earth_texture, GL_TEXTURE_2D);
+	earth_node.set_scaling(glm::vec3(0.25, 0.25, 0.25));
+	float earth_spin_speed = glm::two_pi<float>() / 3.0f;
+
+	Node earth_pivot;
+	float earth_orbit_speed = glm::two_pi<float>() / 10.0f;
+
+	Node earth_translation;
+	earth_translation.translate(glm::vec3(2, 0, 0));
+
+	//Moon
+	Node moon_node;
+	moon_node.set_geometry(sphere);
+	GLuint const moon_texture = bonobo::loadTexture2D("moonmap1k.png");
+	moon_node.add_texture("diffuse_texture", moon_texture, GL_TEXTURE_2D);
+	moon_node.set_translation(glm::vec3(0.5, 0, 0));
+	moon_node.set_scaling(glm::vec3(0.1, 0.1, 0.1));
+	float moon_spin_speed = glm::two_pi<float>() / 10.0f;
+
+	Node moon_pivot;
+	float moon_orbit_speed = glm::two_pi<float>() / 3.0f;
+
+	//Jupiter
+	Node jupiter_node;
+	jupiter_node.set_geometry(sphere);
+	GLuint const jupiter_texture = bonobo::loadTexture2D("jupitermap.png");
+	jupiter_node.add_texture("diffuse_texture", jupiter_texture, GL_TEXTURE_2D);
+	jupiter_node.set_scaling(glm::vec3(0.5, 0.5, 0.5));
+	float jupiter_spin_speed = glm::two_pi<float>() / 2.0f;
+
+	Node jupiter_pivot;
+	float jupiter_orbit_speed = glm::two_pi<float>() / 10.0f;
+
+	Node jupiter_translation;
+	jupiter_translation.translate(glm::vec3(5, 0, 0));
+
+	//Jupiter moons
+	Node jupiter_moon_node;
+	jupiter_moon_node.set_geometry(sphere);
+	jupiter_moon_node.add_texture("diffuse_texture", moon_texture, GL_TEXTURE_2D);
+	jupiter_moon_node.set_translation(glm::vec3(1.2, 0, 0));
+	jupiter_moon_node.set_scaling(glm::vec3(0.15, 0.15, 0.15));
+	float jupiter_moon_spin_speed = glm::two_pi<float>() / 10.0f;
+
+	Node jupiter_moon_pivot;
+	float jupiter_moon_orbit_speed = glm::two_pi<float>() / 3.0f;
+
+	Node jupiter_moon2_node;
+	jupiter_moon2_node.set_geometry(sphere);
+	jupiter_moon2_node.add_texture("diffuse_texture", moon_texture, GL_TEXTURE_2D);
+	jupiter_moon2_node.set_translation(glm::vec3(0.8, 0, 0));
+	jupiter_moon2_node.set_scaling(glm::vec3(0.12, 0.12, 0.12));
+	float jupiter_moon2_spin_speed = glm::two_pi<float>() / 5.0f;
+
+	Node jupiter_moon2_pivot;
+	float jupiter_moon2_orbit_speed = glm::two_pi<float>() / 1.5f;
+
+
+
+
+	Node solar_system_node;
+	solar_system_node.add_child(&sun_node);
+
+	solar_system_node.add_child(&earth_pivot);
+	earth_pivot.add_child(&earth_translation);
+	earth_translation.add_child(&earth_node);
+	earth_translation.add_child(&moon_pivot);
+	moon_pivot.add_child(&moon_node);
+
+	solar_system_node.add_child(&jupiter_pivot);
+	jupiter_pivot.add_child(&jupiter_translation);
+	jupiter_translation.add_child(&jupiter_node);
+	jupiter_translation.add_child(&jupiter_moon_pivot);
+	jupiter_translation.add_child(&jupiter_moon2_pivot);
+	jupiter_moon_pivot.add_child(&jupiter_moon_node);
+	jupiter_moon2_pivot.add_child(&jupiter_moon2_node);
+
+
+	// Retrieve the actual framebuffer size: for HiDPI monitors, you might
+	// end up with a framebuffer larger than what you actually asked for.
+	// For example, if you ask for a 1920x1080 framebuffer, you might get a
+	// 3840x2160 one instead.
+	int framebuffer_width, framebuffer_height;
+	glfwGetFramebufferSize(window, &framebuffer_width, &framebuffer_height);
+
+	glViewport(0, 0, framebuffer_width, framebuffer_height);
+	glClearDepthf(1.0f);
+	glClearColor(0.2f, 0.2f, 0.2f, 1.0f);
+	glEnable(GL_DEPTH_TEST);
+
+
+	size_t fpsSamples = 0;
+	double lastTime = GetTimeSeconds();
+	double fpsNextTick = lastTime + 1.0;
+
+
+	bool show_logs = true;
+	bool show_gui = true;
+
+	while (!glfwWindowShouldClose(window)) {
+		//
+		// Compute timings information
+		//
+		double const nowTime = GetTimeSeconds();
+		double const delta_time = nowTime - lastTime;
+		lastTime = nowTime;
+		if (nowTime > fpsNextTick) {
+			fpsNextTick += 1.0;
+			fpsSamples = 0;
+		}
+		++fpsSamples;
+
+
+		//
+		// Process inputs
+		//
+		glfwPollEvents();
+
+		ImGuiIO const& io = ImGui::GetIO();
+		input_handler.SetUICapture(io.WantCaptureMouse, io.WantCaptureKeyboard);
+		input_handler.Advance();
+		camera.Update(delta_time, input_handler);
+
+		if (input_handler.GetKeycodeState(GLFW_KEY_F3) & JUST_RELEASED)
+			show_logs = !show_logs;
+		if (input_handler.GetKeycodeState(GLFW_KEY_F2) & JUST_RELEASED)
+			show_gui = !show_gui;
+
+
+		//
+		// Start a new frame for Dear ImGui
+		//
+		ImGui_ImplGlfwGL3_NewFrame();
+
+
+		//
+		// Clear the screen
+		//
+		glClear(GL_DEPTH_BUFFER_BIT | GL_COLOR_BUFFER_BIT);
+
+
+		//
+		// Update the transforms
+		//
+		sun_node.rotate_y(sun_spin_speed * delta_time);
+
+		earth_node.rotate_y(earth_spin_speed * delta_time);
+		earth_pivot.rotate_y(earth_orbit_speed * delta_time);
+
+		moon_node.rotate_y(moon_spin_speed * delta_time);
+		moon_pivot.rotate_y(moon_orbit_speed * delta_time);
+
+		jupiter_node.rotate_y(jupiter_spin_speed * delta_time);
+		jupiter_pivot.rotate_y(jupiter_orbit_speed * delta_time);
+
+		jupiter_moon_node.rotate_y(jupiter_moon_spin_speed * delta_time);
+		jupiter_moon_pivot.rotate_y(jupiter_moon_orbit_speed * delta_time);
+
+		jupiter_moon2_node.rotate_y(jupiter_moon2_spin_speed * delta_time);
+		jupiter_moon2_pivot.rotate_y(jupiter_moon2_orbit_speed * delta_time);
+
+
+		//
+		// Traverse the scene graph and render all nodes
+		//
+		std::stack<Node const*> node_stack({ &solar_system_node });
+		std::stack<glm::mat4> matrix_stack({ solar_system_node.get_transform() });
+		// TODO: Replace this explicit rendering of the Sun with a
+		// traversal of the scene graph and rendering of all its nodes.
+		// sun_node.render(camera.GetWorldToClipMatrix(), sun_node.get_transform(), shader, [](GLuint /*program*/){});
+
+		Node current_node;
+		glm::mat4 current_matrix;
+		int children_nb = 0;
+
+		while (!node_stack.empty()) {
+			current_node = *node_stack.top();
+			node_stack.pop();
+			current_matrix = matrix_stack.top();
+			matrix_stack.pop();
+			children_nb = current_node.get_children_nb();
+
+			while (children_nb > 0) {
+				node_stack.push(current_node.get_child(children_nb - 1));
+				glm::mat4 world_mat = current_matrix*node_stack.top()->get_transform();
+				matrix_stack.push(world_mat);
+				children_nb--;
+			}
+			current_node.render(camera.GetWorldToClipMatrix(), current_matrix, shader, [](GLuint /*program*/) {});
+		}
+
+
+
+		//
+		// Display Dear ImGui windows
+		//
+		if (show_logs)
+			Log::View::Render();
+		if (show_gui)
+			ImGui::Render();
+
+
+		//
+		// Queue the computed frame for display on screen
+		//
+		glfwSwapBuffers(window);
+	}
+
+	glDeleteTextures(1, &sun_texture);
+	glDeleteTextures(1, &earth_texture);
+	glDeleteTextures(1, &moon_texture);
+	glDeleteTextures(1, &jupiter_texture);
+
+
+	Log::View::Destroy();
+	Log::Destroy();
+
+	return EXIT_SUCCESS;
+}
